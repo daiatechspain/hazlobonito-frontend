@@ -1,0 +1,48 @@
+/* frontend/style.css */
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h3 {
+  text-align: center;
+}
+
+textarea, input, select, button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #222;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+#resultado {
+  background: #eee;
+  padding: 15px;
+  border-radius: 4px;
+  min-height: 100px;
+  white-space: pre-wrap;
+}
