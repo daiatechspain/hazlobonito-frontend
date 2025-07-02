@@ -1,16 +1,17 @@
-<!-- frontend/dashboard.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hazlo Bonito - Dashboard</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
     <h1>Hazlo Bonito</h1>
-    <p>Reescribe tu texto con inteligencia artificial. Estilo:</p>
+    <p>Reescribe tu texto con inteligencia artificial.</p>
 
+    <label for="estilo"><strong>Selecciona el estilo:</strong></label>
     <select id="estilo">
       <option value="profesional">Profesional</option>
       <option value="amable">Amable</option>
@@ -19,16 +20,19 @@
       <option value="claro y simple">Claro y simple</option>
     </select>
 
+    <label for="texto"><strong>Texto original:</strong></label>
     <textarea id="texto" placeholder="Pega tu texto aquí..." rows="8"></textarea>
-    <button onclick="reescribirTexto()">Reescribir</button>
+
+    <button onclick="reescribirTexto()">✍️ Reescribir</button>
 
     <h3>Resultado:</h3>
     <div id="resultado"></div>
-    <h2>Historial de textos reescritos</h2>
-    <button onclick="verHistorial()">Ver historial</button>
+
+    <h3>Historial de textos reescritos</h3>
+    <button onclick="verHistorial()">📜 Ver historial</button>
     <div id="historial"></div>
 
-    <button onclick="cerrarSesion()">Cerrar sesión</button>
+    <button onclick="cerrarSesion()">🔒 Cerrar sesión</button>
   </div>
 
   <script src="script.js"></script>
