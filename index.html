@@ -5,16 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Iniciar sesión - Hazlo Bonito</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .login-container {
+      max-width: 400px;
+      margin: 60px auto;
+      padding: 30px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+      text-align: center;
+    }
+
+    .login-container h1 {
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
 <body>
 
-  <h1>Inicia sesión en Hazlo Bonito</h1>
+  <div class="login-container">
+    <h1>Inicia sesión en Hazlo Bonito</h1>
 
-  <form id="loginForm">
-    <input type="email" id="email" placeholder="Correo electrónico" required />
-    <input type="password" id="password" placeholder="Contraseña" required />
-    <button type="submit">Iniciar sesión</button>
-  </form>
+    <form id="loginForm">
+      <input type="email" id="email" placeholder="Correo electrónico" required />
+      <input type="password" id="password" placeholder="Contraseña" required />
+      <button type="submit">Iniciar sesión</button>
+    </form>
+
+    <p>¿No tienes cuenta? <a href="register.html">Regístrate</a></p>
+  </div>
 
   <script src="script.js"></script>
 </body>
